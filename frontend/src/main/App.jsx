@@ -5,13 +5,17 @@ import React from 'react'
 
 import Logo from '../componentes/template/Logo'
 import Nav from '../componentes/template/Nav'
-import Home from '../componentes/home/Home'
 import Footer from '../componentes/template/Footer'
+import { BrowserRouter } from 'react-router-dom'
+
+import Routes from './Routes'
 
 export default props =>
-    <div className="app">
-        <Logo />
-        <Nav />
-        <Home />
-        <Footer />
-    </div>
+    <BrowserRouter>
+        <div className="app">
+            <Logo />
+            <Nav />
+            <Routes />
+            <Footer />
+        </div>
+    </BrowserRouter>
