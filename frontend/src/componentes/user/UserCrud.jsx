@@ -16,7 +16,7 @@ const inicialState = {
 
 export default class UserCrud extends Component {
 
-    state = { ... inicialState }
+    state = { ...inicialState }
 
     clear() {
         this.setState({ user: inicialState.user })
